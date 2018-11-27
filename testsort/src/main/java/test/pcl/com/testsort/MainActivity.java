@@ -28,9 +28,11 @@ public class MainActivity extends Activity {
         Person p1 = new Person("0001","zhangsan",32);
         Person p2 = new Person("0002","lisi",20);
         Person p3 = new Person("0003","wangwu",25);
+		Person p4 = new Person("0003","wangwu",30);
         plist.add(p1);
         plist.add(p2);
         plist.add(p3);
+		plist.add(p4);
         System.out.println("排序前的结果："+plist);
         Collections.sort(plist, new Comparator<Person>(){
             /*
@@ -54,6 +56,7 @@ public class MainActivity extends Activity {
         for(Person person:plist){
             Log.v("MainActivity","Person==id="+person.getId()+";name="+person.getName()+";age="+person.getAge());
         }
+		Log.v("MainActivity","end");
 
 
 
